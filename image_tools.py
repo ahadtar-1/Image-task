@@ -49,7 +49,8 @@ def convert_greyscaleimage(pathtoFile: str)-> None:
     """
 
     myImage = cv.imread(pathtoFile, cv.IMREAD_GRAYSCALE)
-    newImage = cv.cvtColor(myImage, cv.COLOR_GRAY2BGR)
+    newImage = cv.cvtColor(myImage, cv.COLOR_GRAY2RGB) * 255
+    #finalImage = cv.merge([myImage, myImage, myImage])
     os.chdir(uploadsDir)
     fileName = 'colorednew.jpg'
     cv.imwrite(fileName, newImage)

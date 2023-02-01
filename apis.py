@@ -8,7 +8,6 @@ import os
 from image_tools import convert_coloredimage, convert_greyscaleimage, resize_image, blur_image, change_eyecolor
 
 uploadsDir = "/home/ekkelai/Desktop/EkkelAI-TrainingTask2/Tempdata"
-
 app = Flask(__name__)
 
 

@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "29502774-a4ea-431e-bce3-cbb11db20821",
+		"name": "Image Task APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25619171"
+	},
+	"item": [
+		{
+			"name": "Colored to Greyscale Image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/ekkelai/Documents/Tasks/Image-task/Pics/person.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/convertcolored",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"convertcolored"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Greyscale to Colored Image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/ekkelai/Documents/Tasks/Image-task/Tempdata/greyscalecat.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/convertgreyscale",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"convertgreyscale"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eye color change",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/ekkelai/Documents/Tasks/Image-task/Pics/happyboy.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/eyecolorchange",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"eyecolorchange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Blur image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/ekkelai/Documents/Tasks/Image-task/Pics/faces.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/blurimage",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"blurimage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count Faces",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
